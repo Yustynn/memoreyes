@@ -4,6 +4,7 @@
   "description": "For Fullstack Academy's Stackathon",
   "main": "index.js",
   "scripts": {
+    "sassy": "sass --watch app/sass/main.sass:style.css",
     "build": "webpack",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"

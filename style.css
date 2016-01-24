@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Unica+One|Vollkorn:400,400italic,500,700,700italic);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+* {
+  font-family: "Vollkorn", serif; }
+
+.cf::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.wrapper {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#frame {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  #frame::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#logo {
+  float: left;
+  font-size: 18px;
+  letter-spacing: 2.6px;
+  font-family: "Unica One", cursive; }
+
+#user-greeting {
+  float: right;
+  text-align: right; }
+
+#footer {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic; }
+
+main {
+  height: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+main.home {
+  background-color: #F9F9F9; }
+
+#hero {
+  letter-spacing: 2px;
+  line-height: 60px;
+  font-size: 48px;
+  font-weight: 400; }
+  #hero strong {
+    font-weight: 700; }
+
+#login {
+  color: #414141;
+  float: right;
+  margin-top: 30px;
+  position: relative;
+  text-align: center; }
+
+#login-text {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding: 0 10px; }
+
+#google-plus {
+  height: 36px;
+  padding-left: 15px;
+  position: absolute;
+  top: 5px; }
+
+#login-text-subhead {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Unica One", cursive; }
+
+#login-a {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

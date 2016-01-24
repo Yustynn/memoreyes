@@ -5,10 +5,11 @@ import Login from './home/Login'
 
 export default React.createClass({
     render: function() {
-        return <main>
-            <p>Main here</p>
-            <Hero />
-            <Login />
+        return <main className='home'>
+            <div className='wrapper'>
+                <Hero />
+                <Login />
+            </div>
         </main>
     }
 })
