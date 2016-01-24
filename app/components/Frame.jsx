@@ -9,7 +9,7 @@ export default React.createClass({
                     <p id='logo'>memoreyes</p>
                     <p id='user-greeting'>Hey, Yustynn.</p>
                 </div>
-                <Main />
+                {this.props.children}
                 <p id='footer'>made by yustynn</p>
             </section>
         );
