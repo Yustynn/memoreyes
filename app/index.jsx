@@ -9,11 +9,11 @@ import Matching from './components/matching/Matching';
 
 import store from './store';
 import { authListener } from './actions/auth'
-
+import history from './misc/history';
 
 render((
     <Provider store={ store }>
-        <Router>
+        <Router history={ history }>
             <Route path='/' component={ App }>
                 <IndexRoute component={ Home } />
                 <Route path='/matching' component={ Matching }/>

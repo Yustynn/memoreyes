@@ -3,12 +3,13 @@ import { connect } from 'react-redux'
 
 import { attemptLogin } from '../../actions/auth';
 
+function mapDispatchToProps(dispatch) {
+    return {
+        attemptLogin: function(){ dispatch(attemptLogin()) }
+    }
+}
+
 const Login = React.createClass({
-    onClick: function() {
-        console.log('trying...')
-        dispatch( attemptLogin() )
-        console.log('Tried!')
-    },
     render: function() {
         return <a onClick={ this.props.attemptLogin } id='login'>
                 <span id='login-text'>log in</span>
@@ -20,17 +21,4 @@ const Login = React.createClass({
     }
 })
 
-connect(mapStateToProps, mapDispatchToProps)(Login)
-
-export default Login;
-
-function mapStateToProps(state) {
-    console.log('loggin')
-    return {attemptLogin: function(){ console.log('hey'); dispatch(attemptLogin()) }};
-}
-
-function mapDispatchToProps(dispatch) {
-    return {
-        attemptLogin: function(){ console.log('hey'); dispatch(attemptLogin()) }
-    }
-}
+export default connect(null, mapDispatchToProps)(Login)

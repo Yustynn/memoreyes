@@ -1,4 +1,4 @@
-import Firebase from 'firebase';
+import Firebase from 'firebase'
 
 export const FIREBASE = new Firebase("https://memoreyes.firebaseio.com");
 

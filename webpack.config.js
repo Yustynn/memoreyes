@@ -25,7 +25,7 @@ module.exports = {
             loaders: ['style', 'css', 'sass']
         }]
     },
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     devServer: {
       hot: true,
       inline: true,
