@@ -11,25 +11,3 @@ export default React.createClass({
         return <a onClick={ this.goHome }>THIS IS THE MATCHING PAGE</a>
     }
 })
-
-
-{
-    user: NAME,
-    game: {
-        words: [],
-        playerOne: {
-            user: name,
-            startMemorization: DateTime,
-            endMemorization: DateTime,
-            startRecall: DateTime,
-            endRecall: DateTime
-        },
-        playerTwo: {
-            user: name,
-            startMemorization: DateTime,
-            endMemorization: DateTime,
-            startRecall: DateTime,
-            endRecall: DateTime
-        }
-    }
-}

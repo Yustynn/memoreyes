@@ -25,11 +25,14 @@
     "webpack-merge": "^0.7.3"
   },
   "dependencies": {
+    "firebase": "^2.4.0",
     "history": "^1.17.0",
+    "immutable": "^3.7.6",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-redux": "^4.0.6",
     "react-router": "^1.0.3",
-    "redux": "^3.0.5"
+    "redux": "^3.0.5",
+    "redux-thunk": "^1.0.3"
   }
 }
