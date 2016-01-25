@@ -18,6 +18,7 @@ export const authListener = () => (dispatch, getState) => {
 // authListener already parses the actual authData from login attempt
 export const attemptLogin = () => (dispatch, getState) => {
     dispatch({ type: ACTION_TYPES.ATTEMPT_LOGIN});
+    
     FIREBASE.authWithOAuthPopup('google', (err, authData) => {
         if (err) console.error('Login Failed!', err);
         else console.log("Success! Logged in with: ", authData);
@@ -26,5 +27,6 @@ export const attemptLogin = () => (dispatch, getState) => {
 
 export const logout = () => (dispatch, getState) => {
     FIREBASE.unauth();
+    dispatch({ type: ACTION_TYPES.LOGOUT });
     history.push('/')
 }

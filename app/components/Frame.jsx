@@ -12,13 +12,19 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
+function mapStateToProps(state) {
+    return {
+        userName: state.get('auth') ? state.getIn(['auth', 'name']) : ''
+    }
+}
+
 const Frame = React.createClass({
     render: function() {
         return (
             <section id='frame'>
                 <div className='cf'>
                     <Link to='/' id='logo'>memoreyes</Link>
-                    <p onClick={ this.props.logout } id='user-greeting'>Hey, Yustynn.</p>
+                    { this.props.userName ? <p onClick={ this.props.logout } id='user-greeting'>You're { this.props.userName }.</p> : ''}
                 </div>
                 {this.props.children}
                 <p id='footer'>made by yustynn</p>
@@ -27,4 +33,4 @@ const Frame = React.createClass({
     }
 })
 
-export default connect(null, mapDispatchToProps)(Frame);
+export default connect(mapStateToProps, mapDispatchToProps)(Frame);
