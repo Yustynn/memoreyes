@@ -4,4 +4,4 @@ import reducer from '../misc/reducer';
 
 const createStoreWithThunk = applyMiddleware(thunk)(createStore);
 
-export default let store = createStoreWithThunk(reducer);
+export default createStoreWithThunk(reducer);

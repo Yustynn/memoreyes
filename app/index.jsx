@@ -1,17 +1,25 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Redirect, Router, Route } from 'react-router';
+import { Redirect, Router, Route, IndexRoute } from 'react-router';
+import { Provider } from 'react-redux';
 
 import App from './components/App';
 import Home from './components/home/Home'
 import Matching from './components/matching/Matching';
 
+import store from './store';
+import { authListener } from './actions/auth'
+
+
 render((
-    <Router>
-        <Redirect from='/' to='/home' />
-        <Route path='/' component={ App }>
-            <Route path='/home' component={ Home } />
-            <Route path='/matching' component={ Matching }/>
-        </Route>
-    </Router>
+    <Provider store={ store }>
+        <Router>
+            <Route path='/' component={ App }>
+                <IndexRoute component={ Home } />
+                <Route path='/matching' component={ Matching }/>
+            </Route>
+        </Router>
+    </Provider>
 ), document.getElementById('app'));
+
+store.dispatch( authListener() ); // continuously check for login

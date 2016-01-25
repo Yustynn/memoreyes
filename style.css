@@ -63,8 +63,13 @@ main.home {
   #hero strong {
     font-weight: 700; }
 
+#logo {
+  color: black;
+  text-decoration: none; }
+
 #login {
   color: #414141;
+  cursor: pointer;
   float: right;
   margin-top: 30px;
   position: relative;

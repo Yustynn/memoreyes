@@ -8,7 +8,6 @@ export default React.createClass({
     render: function() {
         return <Frame>
             <Main>
-                <Link to='/home'>Home</Link>
                 <Link to='/matching'>Matching</Link>
                 { this.props.children }
             </Main>

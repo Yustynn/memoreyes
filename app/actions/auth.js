@@ -13,7 +13,7 @@ export const authListener = () => (dispatch, getState) => {
     })
 }
 
-// authListener parses the actual authData from login attemp
+// authListener already parses the actual authData from login attempt
 export const attemptLogin = () => (dispatch, getState) => {
     dispatch({ type: ACTION_TYPES.ATTEMPT_LOGIN});
     FIREBASE.authWithOAuthPopup('google', (err, authData) => {
@@ -21,6 +21,15 @@ export const attemptLogin = () => (dispatch, getState) => {
         else console.log("Success! Logged in with: ", authData);
     })
 }
+
+// export const attemptLogin = function() {
+//     return function(dispatch) {
+//         FIREBASE.authWithOAuthPopup('google', (err, authData) => {
+//             if (err) console.error('Login Failed!', error);
+//             else console.log("Success! Logged in with: ", authData);
+//         });
+//     }
+// }
 
 export const logout = () => (dispatch, getState) => {
     FIREBASE.unauth();
