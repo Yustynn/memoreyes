@@ -1,11 +1,14 @@
 import React from 'react';
-import {render} from 'react-dom';
-import {Router, Route, Link} from 'react-router';
+import { render } from 'react-dom';
+import { Redirect, Router, Route, Link } from 'react-router';
+
 
 import Frame from './components/Frame';
 import Main from './components/Main'
 import Home from './components/home/Home'
 import Matching from './components/matching/Matching';
+
+
 
 const App = React.createClass({
     render: function() {
@@ -21,6 +24,7 @@ const App = React.createClass({
 
 render((
     <Router>
+        <Redirect from='/' to='/home' />
         <Route path='/' component={ App }>
             <Route path='/home' component={ Home } />
             <Route path='/matching' component={ Matching }/>
