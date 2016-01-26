@@ -24,7 +24,7 @@ const Frame = React.createClass({
             <section id='frame'>
                 <div className='cf'>
                     <Link to='/' id='logo'>memoreyes</Link>
-                    { this.props.userName ? <p onClick={ this.props.logout } id='user-greeting'>You're { this.props.userName }.</p> : ''}
+                    { this.props.userName ? <p onClick={ this.props.logout } id='user-greeting'>You're { this.props.userName }. Click if you don't wanna be.</p> : ''}
                 </div>
                 {this.props.children}
                 <p id='footer'>made by yustynn</p>

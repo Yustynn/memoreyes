@@ -30,15 +30,21 @@ html {
     clear: both;
     content: "";
     display: table; }
+  #frame div {
+    padding: 10px 0; }
 
 #logo {
   float: left;
-  font-size: 18px;
-  letter-spacing: 2.6px;
+  font-size: 20px;
+  letter-spacing: 2.9px;
   font-family: "Unica One", cursive; }
 
 #user-greeting {
+  cursor: pointer;
   float: right;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 5px 0;
   text-align: right; }
 
 #footer {
@@ -94,5 +100,68 @@ main.home {
 
 #login-a {
   text-align: center; }
+
+.fight-button {
+  padding-left: 20px;
+  text-decoration: none; }
+  .fight-button span {
+    background-color: #F5A623;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin-left: -10px;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: "Vollkorn", serif; }
+
+#modal-bg {
+  background-color: #3B3B3B;
+  height: 90%;
+  width: 90%;
+  margin: 2% auto 0; }
+
+#modal-front {
+  background-color: white;
+  margin: 5% auto 0;
+  height: 80%;
+  width: 70%; }
+  #modal-front h1, #modal-front h2 {
+    color: #414141;
+    text-align: center;
+    font-weight: 400; }
+  #modal-front h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 0; }
+  #modal-front h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+#challenge-request-options {
+  display: flex;
+  justify-content: center; }
+  #challenge-request-options img {
+    padding: 0 80px; }
+
+.matching {
+  color: #414141; }
+  .matching h1 {
+    letter-spacing: 2px;
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: "Vollkorn", serif; }
+  .matching .name {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    font-family: "Unica One", cursive; }
+  .matching .status {
+    font-size: 20px;
+    letter-spacing: 0.8px; }
 
 /*# sourceMappingURL=style.css.map */

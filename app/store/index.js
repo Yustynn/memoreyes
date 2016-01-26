@@ -1,7 +1,14 @@
-import { createStore, applyMiddleware } from 'redux';
+import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import reducer from '../misc/reducer';
+import DevTools from '../components/DevTools'
+// import Firebase from 'firebase';
 
-const createStoreWithThunk = applyMiddleware(thunk)(createStore);
+const finalCreateStore = compose(
+  // Middleware you want to use in development:
+  applyMiddleware(thunk),
+  // Required! Enable Redux DevTools with the monitors you chose
+  DevTools.instrument()
+)(createStore);
 
-export default createStoreWithThunk(reducer);
+export default finalCreateStore(reducer);

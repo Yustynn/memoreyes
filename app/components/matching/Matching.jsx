@@ -1,13 +1,14 @@
 import React from 'react';
-import { History } from 'react-router'
+import { Router, Route } from 'react-router';
+
+import FightButton from './FightButton'
+import Modal from './Modal'
 
 export default React.createClass({
-    mixins: [ History ],
-    goHome: function() {
-        this.history.push('/home');
-        // browserHistory.push('/home');
-    },
     render: function() {
-        return <a onClick={ this.goHome }>THIS IS THE MATCHING PAGE</a>
+        return <div>
+            <h1>Online</h1>
+            { this.props.children }
+        </div>
     }
 })

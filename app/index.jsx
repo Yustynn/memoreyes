@@ -5,7 +5,8 @@ import { Provider } from 'react-redux';
 
 import App from './components/App';
 import Home from './components/home/Home'
-import Matching from './components/matching/Matching';
+import PlayerList from './components/matching/PlayerList';
+import Modal from './components/matching/Modal';
 
 import store from './store';
 import { authListener } from './actions/auth'
@@ -16,7 +17,8 @@ render((
         <Router history={ history }>
             <Route path='/' component={ App }>
                 <IndexRoute component={ Home } />
-                <Route path='/matching' component={ Matching }/>
+                <Route path='/matching' component={ PlayerList }/>
+                <Route path='/matching/request-fight' component={ Modal }/>
             </Route>
         </Router>
     </Provider>

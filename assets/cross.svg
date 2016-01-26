@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Copy-7" sketch:type="MSArtboardGroup" transform="translate(-331.000000, -327.000000)" fill="#FC6565">
+            <g id="Rectangle-22-Copy-+-Wants-To-Fight-+-Jackson-Pollock-+-Shape-+-Shape" sketch:type="MSLayerGroup" transform="translate(208.000000, 161.000000)">
+                <g id="Shape-+-Shape" transform="translate(123.000000, 166.000000)" sketch:type="MSShapeGroup">
+                    <path d="M65.02625,48.00025 L94.82525,18.20025 C96.39225,16.63725 96.39225,14.09325 94.82525,12.52525 L83.47525,1.17525 C81.90825,-0.39175 79.36825,-0.39175 77.79925,1.17525 L48.00025,30.97425 L18.20125,1.17525 C16.63325,-0.39175 14.09425,-0.38775 12.52525,1.17525 L1.17525,12.52925 C-0.39175,14.09625 -0.39175,16.63625 1.17525,18.20425 L30.97525,48.00425 L1.17525,77.79925 C-0.39175,79.36725 -0.39175,81.91025 1.17525,83.47925 L12.52625,94.83025 C14.09425,96.39725 16.63325,96.39325 18.20225,94.83025 L48.00025,65.02925 L77.79925,94.82925 C79.36725,96.39625 81.90725,96.39625 83.47525,94.82925 L94.82625,83.47525 C96.39325,81.91125 96.39325,79.36825 94.82625,77.79925 L65.02625,48.00025 L65.02625,48.00025 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

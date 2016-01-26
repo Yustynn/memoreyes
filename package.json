@@ -6,7 +6,7 @@
   "scripts": {
     "sassy": "sass --watch app/sass/main.sass:style.css",
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --hot --inline --module-bind 'css=style!css'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yustynn Panicker",
@@ -19,6 +19,9 @@
     "babel-preset-react-hmre": "^1.0.1",
     "babel-preset-survivejs-kanban": "^0.2.1",
     "node-sass": "^3.4.2",
+    "redux-devtools": "^3.0.1",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.2",
     "sass-loader": "^3.1.2",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1",
@@ -33,6 +36,7 @@
     "react-redux": "^4.0.6",
     "react-router": "^1.0.3",
     "redux": "^3.0.5",
+    "redux-devtools": "^3.0.1",
     "redux-thunk": "^1.0.3"
   }
 }
